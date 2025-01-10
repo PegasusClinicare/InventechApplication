@@ -37,13 +37,14 @@ const appConnection = express();
 appConnection.use(morganMiddleware("dev"));
 appConnection.use(corsMiddleware({
   origin: process.env.ENVIRONMENT === "Production" ?
-    [
-      "https://inventech-001.netlify.app",
-    ] :
-    [
-      "http://localhost:5173",
-      "http://localhost:5174",
-    ], credentials: true
+  [
+    "https://inventech-practice.netlify.app",
+  ] :  process.env.ENVIRONMENT === "Development" ?
+  [
+    "http://localhost:5173",
+    "http://localhost:5174"
+  ] : "http://localhost:5173", 
+  credentials: true
 }));
 appConnection.use(bodyParserMiddleware.urlencoded({ extended: true }));
 appConnection.use(bodyParserMiddleware.json());
