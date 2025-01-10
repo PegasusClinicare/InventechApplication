@@ -22,7 +22,7 @@ const data = {
     label: "Sign In",
   },
   links: [
-    { linkMessage: "Don't have an account?", linkRoute: fullRoute.aGlobalRoute.bProtectedRoute.aAuthenticationRoute.bSignUpRoute, linkText: "Sign Up" },
+    // { linkMessage: "Don't have an account?", linkRoute: fullRoute.aGlobalRoute.bProtectedRoute.aAuthenticationRoute.bSignUpRoute, linkText: "Sign Up" },
     { linkMessage: "Forgot Password?", linkRoute: fullRoute.aGlobalRoute.bProtectedRoute.aAuthenticationRoute.cForgotPasswordRoute, linkText: "Reset Now" },
   ]
 }
