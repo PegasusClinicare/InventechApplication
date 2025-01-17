@@ -134,6 +134,7 @@ const endpointRoute = {
                 aListRoute: "inventory-general-list",
                 bCreateRoute: "inventory-general-create",
                 cRetrieveRoute: "inventory-general-retrieve",
+                dStockTransferRoute: "inventory-stock-transfer",
               },
               lInventoryInwardRoute: {
                 aListRoute: "inventory-inward-list",

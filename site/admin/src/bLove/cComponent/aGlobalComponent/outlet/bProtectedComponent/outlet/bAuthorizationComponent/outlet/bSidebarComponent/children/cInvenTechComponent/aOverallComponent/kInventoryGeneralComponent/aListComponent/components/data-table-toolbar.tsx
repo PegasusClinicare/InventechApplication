@@ -2,10 +2,12 @@
 
 import { Cross2Icon } from "@radix-ui/react-icons"
 import { Table } from "@tanstack/react-table"
-
+import { Link } from "react-router-dom";
 import { Button } from "@/aConnection/bShadcnConnection/components/ui/button"
 import { Input } from "@/aConnection/bShadcnConnection/components/ui/input"
 import { DataTableViewOptions } from "./data-table-view-options"
+
+import fullRoute from "@/bLove/gRoute/bFullRoute";
 
 import { priorities, statuses } from "../data/data"
 import { DataTableFacetedFilter } from "./data-table-faceted-filter"
@@ -30,6 +32,11 @@ export function DataTableToolbar<TData>({
           }
           className="h-8 w-[150px] lg:w-[250px]"
         />
+        <Button asChild variant="blue" >
+          <Link to={fullRoute.aGlobalRoute.bProtectedRoute.bAuthorizationRoute.bSidebarRoute.cInvenTechRoute.aOverallRoute.kInventoryGeneralRoute.dStockTransferRoute} >
+            Stock Transfer
+          </Link>
+        </Button>
         {table.getColumn("status") && (
           <DataTableFacetedFilter
             column={table.getColumn("status")}

@@ -120,4 +120,19 @@ export const columns: ColumnDef<Task>[] = [
       )
     },
   },
+  {
+    accessorKey: "quantity",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Quantity" />
+    ),
+    cell: ({ row }) => {
+      return (
+        <div className="flex space-x-2">
+          <span className="max-w-[100px] truncate">
+            {row.getValue("quantity")}
+          </span>
+        </div>
+      )
+    },
+  },
 ]

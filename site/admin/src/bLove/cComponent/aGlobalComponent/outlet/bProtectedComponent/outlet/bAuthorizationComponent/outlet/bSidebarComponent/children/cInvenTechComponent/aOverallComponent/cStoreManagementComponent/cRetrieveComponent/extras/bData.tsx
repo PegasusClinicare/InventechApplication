@@ -89,7 +89,16 @@ const data = (_APICall?: any) => {
                     title: "Product List",
                     subtitle: "In this section, you will see created and updated details.",
                     values: [
-                      { label: "Product List", value: "Ganesh Shiv", type: "data-list" },
+                      { label: "Product List", value: "Ganesh Shiv", type: "data-list",plusLabel:"Add Product" },
+                    ],  
+                  },
+                  // Stock Details
+                  {
+                    display: true,
+                    title: "Stock",
+                    subtitle: "In this section, you will see created and updated details.",
+                    values: [
+                      { label: "Product List", value: "Ganesh Shiv", type: "data-list",plusLabel:"Update Stock" },
                     ],  
                   },
                                     
