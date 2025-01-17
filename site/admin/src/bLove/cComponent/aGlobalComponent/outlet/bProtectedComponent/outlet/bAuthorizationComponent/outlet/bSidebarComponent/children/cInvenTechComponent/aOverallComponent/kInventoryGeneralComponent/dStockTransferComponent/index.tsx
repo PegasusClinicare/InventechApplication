@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/aConnection/bShadcnConnection/components/ui/button";
-import endpointRoute from "@/bLove/gRoute/aEndpointRoute";
 import { PlusIcon } from "lucide-react";
 
 const StockTransferComponent = () => {
