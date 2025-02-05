@@ -3,9 +3,12 @@ import Redis from 'ioredis'
 // Redis connection made through internsdaemon@gmail.com
 const redisClient = new Redis(process.env.ENVIRONMENT === "Production" ? (
   {
-    host: 'redis-12985.c81.us-east-1-2.ec2.redns.redis-cloud.com',
-    port: 12985,
-    password: 'nI7vpS63deSOiATOp5X3lZ6S8O79XUfq'
+    // host: 'redis-12985.c81.us-east-1-2.ec2.redns.redis-cloud.com',
+    host: 'redis-12195.c283.us-east-1-4.ec2.redns.redis-cloud.com',
+    // port: 12985,
+    port: 12195,
+    // password: 'nI7vpS63deSOiATOp5X3lZ6S8O79XUfq'
+    password: 'N1WhxrAeA6F8hpZLgigrsL3QOIBuaNq1'
   }
 ) : (
   {
