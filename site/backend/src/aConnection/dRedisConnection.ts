@@ -4,17 +4,17 @@ import Redis from 'ioredis'
 const redisClient = new Redis(process.env.ENVIRONMENT === "Production" ? (
   {
     // host: 'redis-12985.c81.us-east-1-2.ec2.redns.redis-cloud.com',
-    host: 'redis-12195.c283.us-east-1-4.ec2.redns.redis-cloud.com',
+    host: 'redis-14779.c301.ap-south-1-1.ec2.redns.redis-cloud.com',
     // port: 12985,
-    port: 12195,
+    port: 14779,
     // password: 'nI7vpS63deSOiATOp5X3lZ6S8O79XUfq'
-    password: 'N1WhxrAeA6F8hpZLgigrsL3QOIBuaNq1'
+    password: 'MwCGuP74Ud5t1HxXU7e3cDAwY8cDH2BN'
   }
 ) : (
   {
-    host: 'redis-11154.crce179.ap-south-1-1.ec2.redns.redis-cloud.com',
-    port: 11154,
-    password: 'WmNrgEozIXQmLciZs8Uv1zZBeoB9R2l1'
+    host: 'redis-14779.c301.ap-south-1-1.ec2.redns.redis-cloud.com',
+    port: 14779,
+    password: 'MwCGuP74Ud5t1HxXU7e3cDAwY8cDH2BN'
   }
 ))
 
